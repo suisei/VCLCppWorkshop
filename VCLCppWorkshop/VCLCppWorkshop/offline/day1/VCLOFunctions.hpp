@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 Kazuki Kumagai. All rights reserved.
 //
 
-#ifndef VCLCppWorkshop_VCLFunctions_hpp
-#define VCLCppWorkshop_VCLFunctions_hpp
+#ifndef VCLOCppWorkshop_VCLOFunctions_hpp
+#define VCLOCppWorkshop_VCLOFunctions_hpp
 
 
 

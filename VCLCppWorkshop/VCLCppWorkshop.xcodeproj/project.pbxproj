@@ -28,8 +28,8 @@
 		E9ED9105191F55B700E63C1B /* VCLCppWorkshop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VCLCppWorkshop; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9ED9108191F55B700E63C1B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E9ED910A191F55B700E63C1B /* VCLCppWorkshop.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = VCLCppWorkshop.1; sourceTree = "<group>"; };
-		E9ED9114191F56CD00E63C1B /* day1Tests.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = day1Tests.hpp; sourceTree = "<group>"; };
-		E9ED9115191F570E00E63C1B /* VCLFunctions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VCLFunctions.hpp; sourceTree = "<group>"; };
+		E9ED9118191F582400E63C1B /* VCLODay1Tests.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VCLODay1Tests.hpp; sourceTree = "<group>"; };
+		E9ED9119191F582400E63C1B /* VCLOFunctions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VCLOFunctions.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +62,26 @@
 		E9ED9107191F55B700E63C1B /* VCLCppWorkshop */ = {
 			isa = PBXGroup;
 			children = (
-				E9ED9113191F569300E63C1B /* day1 */,
+				E9ED9116191F582400E63C1B /* offline */,
 				E9ED9108191F55B700E63C1B /* main.cpp */,
 				E9ED910A191F55B700E63C1B /* VCLCppWorkshop.1 */,
 			);
 			path = VCLCppWorkshop;
 			sourceTree = "<group>";
 		};
-		E9ED9113191F569300E63C1B /* day1 */ = {
+		E9ED9116191F582400E63C1B /* offline */ = {
 			isa = PBXGroup;
 			children = (
-				E9ED9114191F56CD00E63C1B /* day1Tests.hpp */,
-				E9ED9115191F570E00E63C1B /* VCLFunctions.hpp */,
+				E9ED9117191F582400E63C1B /* day1 */,
+			);
+			path = offline;
+			sourceTree = "<group>";
+		};
+		E9ED9117191F582400E63C1B /* day1 */ = {
+			isa = PBXGroup;
+			children = (
+				E9ED9118191F582400E63C1B /* VCLODay1Tests.hpp */,
+				E9ED9119191F582400E63C1B /* VCLOFunctions.hpp */,
 			);
 			path = day1;
 			sourceTree = "<group>";

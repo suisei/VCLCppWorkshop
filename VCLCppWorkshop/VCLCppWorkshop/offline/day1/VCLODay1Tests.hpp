@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 Kazuki Kumagai. All rights reserved.
 //
 
-#ifndef VCLCppWorkshop_day1Tests_hpp
-#define VCLCppWorkshop_day1Tests_hpp
+#ifndef VCLOCppWorkshop_day1Tests_hpp
+#define VCLOCppWorkshop_day1Tests_hpp
 
 void testDay1()
 {
