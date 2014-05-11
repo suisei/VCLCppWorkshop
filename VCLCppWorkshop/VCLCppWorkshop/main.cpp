@@ -8,11 +8,20 @@
 
 #include <iostream>
 
+//#define VCL_ONLINE
+
+#ifdef VCL_ONLINE
+
+#else
+    #include "VCLODay1Tests.hpp"
+#endif
+
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+#ifdef VCL_ONLINE
+    
+#else
+    VCL::testDay1();
+#endif
 }
 

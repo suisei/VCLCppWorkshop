@@ -80,8 +80,8 @@
 		E9ED9117191F582400E63C1B /* day1 */ = {
 			isa = PBXGroup;
 			children = (
-				E9ED9118191F582400E63C1B /* VCLODay1Tests.hpp */,
 				E9ED9119191F582400E63C1B /* VCLOFunctions.hpp */,
+				E9ED9118191F582400E63C1B /* VCLODay1Tests.hpp */,
 			);
 			path = day1;
 			sourceTree = "<group>";
@@ -247,6 +247,7 @@
 				E9ED9110191F55B700E63C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
