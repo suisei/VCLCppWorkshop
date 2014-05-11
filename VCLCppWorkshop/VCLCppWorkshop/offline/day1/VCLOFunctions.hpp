@@ -15,7 +15,7 @@
 namespace VCL
 {
     //###Q1
-    //1. 任意の整数2値を入れ替える関数 VCLSwap を実装する
+    //1. 任意の整数2値を入れ替える関数 VCL::swap を実装する
     //2. 関数が正しく動くかテストする
     // 10min
 
@@ -25,7 +25,7 @@ namespace VCL
     }
 
     //###Q2
-    //1. 任意のポインタ型を入れ替える関数 VCLSwapObjects を実装する
+    //1. 任意のポインタ型を入れ替える関数 VCL::swapObjects を実装する
     //2. 関数が正しく動くかテストする
     // 10min
 
@@ -38,10 +38,10 @@ namespace VCL
     }
 
     //###Q3
-    //1. 任意の正の整数の値域を指定し、その範囲にある素数を全て取得する関数 VCLSearchPrimeNumbers を実装する
+    //1. 任意の正の整数の値域を指定し、その範囲にある素数を全て取得する関数 VCL::searchPrimeNumbers を実装する
     //2. 素数が存在しない場合は、そのことがわかるような結果を返す
     //3. 取得した素数を全てコンソールに出力する
-    // 30min
+    // 20min
     
     typedef unsigned long long u64;
 
@@ -80,12 +80,37 @@ namespace VCL
     }
 
     //###Q4
-    //1. A(a)-Z(z)以外を含まないトグルケースの文字列からキャメルケースの文字列を取得する関数 VCLToggleToCamel を実装する
+    //1. A(a)-Z(z)以外を含まないトグルケースの文字列からキャメルケースの文字列を取得する関数 VCL::toggleToCamel を実装する
     //(例: VISUALcomputingLAB => visualComputingLab)
     //2. 関数が正しく動くかテストする
+    // 20min
+    
+    inline void toggleToCamel(char* camel, const char* toggle)
+    {
+        bool isUpper = toggle[0] < 'a';
+        char toLowerNumber = 'a' - 'A';
+        
+        long index = 0;
+        while (toggle[index] != '\0') {
+            
+            char c = toggle[index];
+            bool toggleHead = c >= 'a' ? isUpper : !isUpper;
+
+            char shifter = 0;
+            shifter = (c >= 'a' &&  toggleHead) ? -toLowerNumber : shifter;
+            shifter = (c <  'a' && !toggleHead) ?  toLowerNumber : shifter;
+            
+            camel[index] = c + shifter;
+            
+            isUpper = c < 'a';
+            ++index;
+        }
+        
+        camel[index] = '\0';
+    }
 
     //###Q5
-    //1. Webカラーコードの文字列を入力数すると、そのRGB各値を整数で取得できる関数 VCLWebColorFromString を実装する
+    //1. Webカラーコードの文字列を入力数すると、そのRGB各値を整数で取得できる関数 VCL::webColorFromString を実装する
     //(例: "12FF0E" => { 18, 255, 14 })
     //2. 関数が正しく動くかテストする
 

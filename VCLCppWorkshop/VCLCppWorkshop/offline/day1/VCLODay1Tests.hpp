@@ -42,6 +42,8 @@ namespace VCL
         testDay1Q1();
         testDay1Q2();
         testDay1Q3();
+        testDay1Q4();
+        testDay1Q5();
         
         printf("[OFFLINE] VCL DAY1 TEST FINISHED\n");
     }
@@ -109,6 +111,15 @@ namespace VCL
     void testDay1Q4()
     {
         printf("===== %s =====\n", __FUNCTION__);
+        
+        const char* toggle1 = "VISUALcomputingLAB";
+        const char* toggle2 = "copyrightVISUALcomputingLAB";
+        char camel[128] = "";
+        
+        toggleToCamel(camel, toggle1);
+        printf("toggle(%s), camel(%s)\n", toggle1, camel);
+        toggleToCamel(camel, toggle2);
+        printf("toggle(%s), camel(%s)\n", toggle2, camel);
         
         printf("===== %s END =====\n", __FUNCTION__);
     }
