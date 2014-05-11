@@ -128,6 +128,10 @@ namespace VCL
     {
         printf("===== %s =====\n", __FUNCTION__);
         
+        const char* colorCode = "11FF5A";
+        VCLRGB color = webColorFromString(colorCode);
+        printf("color %s, (%d, %d, %d)\n", colorCode, color.r, color.g, color.b);
+        
         printf("===== %s END =====\n", __FUNCTION__);
     }
     

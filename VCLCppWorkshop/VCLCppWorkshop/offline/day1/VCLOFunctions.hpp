@@ -41,7 +41,7 @@ namespace VCL
     //1. 任意の正の整数の値域を指定し、その範囲にある素数を全て取得する関数 VCL::searchPrimeNumbers を実装する
     //2. 素数が存在しない場合は、そのことがわかるような結果を返す
     //3. 取得した素数を全てコンソールに出力する
-    // 20min
+    // 30min
     
     typedef unsigned long long u64;
 
@@ -83,27 +83,25 @@ namespace VCL
     //1. A(a)-Z(z)以外を含まないトグルケースの文字列からキャメルケースの文字列を取得する関数 VCL::toggleToCamel を実装する
     //(例: VISUALcomputingLAB => visualComputingLab)
     //2. 関数が正しく動くかテストする
-    // 20min
+    // 30min
     
     inline void toggleToCamel(char* camel, const char* toggle)
     {
-        bool isUpper = toggle[0] < 'a';
+        bool prevWordUpper = toggle[0] < 'a';
         char toLowerNumber = 'a' - 'A';
         
         long index = 0;
         while (toggle[index] != '\0') {
             
             char c = toggle[index];
-            bool toggleHead = c >= 'a' ? isUpper : !isUpper;
+            bool toggleHead = (c >= 'a') ? prevWordUpper : !prevWordUpper;
 
             char shifter = 0;
             shifter = (c >= 'a' &&  toggleHead) ? -toLowerNumber : shifter;
             shifter = (c <  'a' && !toggleHead) ?  toLowerNumber : shifter;
             
-            camel[index] = c + shifter;
-            
-            isUpper = c < 'a';
-            ++index;
+            camel[index++] = c + shifter;
+            prevWordUpper = c < 'a';
         }
         
         camel[index] = '\0';
@@ -113,6 +111,35 @@ namespace VCL
     //1. Webカラーコードの文字列を入力数すると、そのRGB各値を整数で取得できる関数 VCL::webColorFromString を実装する
     //(例: "12FF0E" => { 18, 255, 14 })
     //2. 関数が正しく動くかテストする
+    
+    typedef union
+    {
+        struct { unsigned char r, g, b; };
+        unsigned char v[3];
+        
+    } VCLRGB;
+    
+    inline VCLRGB webColorFromString(const char* colorCode)
+    {
+        if (strlen(colorCode) != 6) {
+            return VCLRGB();
+        }
+        
+        VCLRGB color = { 0, 0, 0 };
+        
+        int colorIndex = 0;
+        for (int i = 0; i < 6; i += 2) {
+
+            char colorStr[2] = { colorCode[i], colorCode[i] };
+            
+            int value = 0;
+            sscanf(colorStr, "%x", &value);
+            
+            color.v[colorIndex++] = static_cast<unsigned char>(value);
+        }
+        
+        return color;
+    }
 
 } // VCL
 
