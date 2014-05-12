@@ -8,20 +8,19 @@
 
 #include <iostream>
 
-//#define VCL_ONLINE
+#define VCL_ONLINE
+
 
 #ifdef VCL_ONLINE
-
+    #include "VCLDay1Tests.h"
 #else
     #include "VCLODay1Tests.hpp"
 #endif
 
+#pragma mark - Functions
+
 int main(int argc, const char * argv[])
 {
-#ifdef VCL_ONLINE
-    
-#else
     VCL::testDay1();
-#endif
 }
 

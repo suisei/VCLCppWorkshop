@@ -25,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E9BBD2C41920C74F00DA09E0 /* VCLDay1Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCLDay1Tests.h; path = day1/VCLDay1Tests.h; sourceTree = "<group>"; };
+		E9BBD2C51920C74F00DA09E0 /* VCLFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCLFunctions.h; path = day1/VCLFunctions.h; sourceTree = "<group>"; };
 		E9ED9105191F55B700E63C1B /* VCLCppWorkshop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VCLCppWorkshop; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9ED9108191F55B700E63C1B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E9ED910A191F55B700E63C1B /* VCLCppWorkshop.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = VCLCppWorkshop.1; sourceTree = "<group>"; };
@@ -43,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9BBD2C11920C2C700DA09E0 /* online */ = {
+			isa = PBXGroup;
+			children = (
+				E9BBD2C41920C74F00DA09E0 /* VCLDay1Tests.h */,
+				E9BBD2C51920C74F00DA09E0 /* VCLFunctions.h */,
+			);
+			path = online;
+			sourceTree = "<group>";
+		};
 		E9ED90FC191F55B700E63C1B = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +73,7 @@
 		E9ED9107191F55B700E63C1B /* VCLCppWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				E9BBD2C11920C2C700DA09E0 /* online */,
 				E9ED9116191F582400E63C1B /* offline */,
 				E9ED9108191F55B700E63C1B /* main.cpp */,
 				E9ED910A191F55B700E63C1B /* VCLCppWorkshop.1 */,
