@@ -57,7 +57,7 @@ namespace VCL
         
         printf("left(%d), right(%d)\n", left, right);
         
-        VCLSwap(left, right);
+        swap(left, right);
         
         printf("left(%d), right(%d)\n", left, right);
         

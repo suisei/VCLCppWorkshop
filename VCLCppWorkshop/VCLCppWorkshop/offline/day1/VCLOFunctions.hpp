@@ -19,7 +19,7 @@ namespace VCL
     //2. 関数が正しく動くかテストする
     // 10min
 
-    inline void VCLSwap(int& left, int& right)
+    inline void swap(int& left, int& right)
     {
         left ^= right ^= left ^= right;
     }
