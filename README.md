@@ -18,9 +18,10 @@ Day1
    (例: VISUALcomputingLAB => visualComputingLab)
 2. 関数が正しく動くかテストする
 
-
-###Q4
-
+###Q5
+1. Webカラーコードの文字列を入力数すると、そのRGB各値を整数で取得できる関数 VCL::webColorFromString を実装する
+   (例: "12FF0E" => { 18, 255, 14 })
+2. 関数が正しく動くかテストする
 
 ###Q5
 
