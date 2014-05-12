@@ -14,6 +14,9 @@ Day1
 2. 関数が正しく動くかテストする
 
 ###Q3
+1. A(a)-Z(z)以外を含まないトグルケースの文字列からキャメルケースの文字列を取得する関数 VCL::toggleToCamel を実装する 
+   (例: VISUALcomputingLAB => visualComputingLab)
+2. 関数が正しく動くかテストする
 
 
 ###Q4
